@@ -1,0 +1,44 @@
+.advantages {
+  display: flex;
+  
+  &__item {
+    width: 250px;
+    
+    &:nth-child(n+2) {
+      margin-left: 50px;
+    }
+  }
+  
+  &__icon {
+    height: 70px;
+    width: 100%;
+    background-position: left top;
+    
+    &--badge {
+      background: url(../img/advantage-badge.png) no-repeat;
+    }
+    
+    &--delivery {
+      background: url(../img/advantage-truck.png) no-repeat;
+    }
+    
+    &--guarantee {
+      background: url(../img/advantage-shield.png) no-repeat;
+    }
+  }
+  
+  &__header {
+    color: #000;
+    font-family: @font-primary;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  &__comment {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    font-family: @font-primary;
+  }
+}

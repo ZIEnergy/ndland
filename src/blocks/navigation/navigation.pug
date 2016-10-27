@@ -1,0 +1,9 @@
+mixin navigation(additionalClass)
+  .navigation(class=additionalClass)
+    .wrapper.navigation__wrapper
+      .navigation__categories
+        a.navigation__category-item(href="#") Мужские
+        a.navigation__category-item(href="#") Женские
+      .navigation__right
+        +menu
+        +search

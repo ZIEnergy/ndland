@@ -1,0 +1,13 @@
+mixin header(additionalClass)
+  .header(class=additionalClass)
+    .wrapper.header__wrapper
+      +logo
+      .header__title Оригинальные кроссовки <br>New Balance
+      .header__address г. Москва, ул. Мясницкая, д. 24 
+        .header__address-metro м. Чистые пруды
+      a.button.header__callback(href="#") Обратный звонок
+      a.header__cart(href="#") Корзина:
+        span.header__cart-amount 0
+      .header__phone
+        a.header__phone-content(href="#") +7 (495) 120-12-51
+        .header__phone-comment Ежедневно 10.00 - 21.00
